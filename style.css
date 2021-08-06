@@ -5,6 +5,9 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/* -----------------
+Header Part
+------------------- */
 h1 {
   font-size: 64px;
   line-height: 80px;
@@ -39,11 +42,17 @@ h1 {
   padding-left: 7px;
 }
 .banner-image {
-  width: 556px;
-  margin-top: 20px;
+  width: 500px;
+  margin-top: 30px;
+}
+.banner-image:hover {
+  transform: scale(1.1);
+  transition: transform 2s ease-in-out;
 }
 
-/* ------ */
+/* -------------
+Gallery Part
+---------------- */
 .container {
   background-color: #ffffff;
   padding: 50px 180px;
@@ -67,7 +76,9 @@ h1 {
 .player p {
   text-align: justify;
 }
-/* ------- */
+/* ----------------
+Top player Part
+------------------- */
 #top-player {
   color: #000000;
   font-size: 32px;
@@ -92,7 +103,33 @@ h1 {
   width: 100%;
   border-radius: 8px;
 }
-/* -------- */
+/* -------------
+HihgLight Part
+----------------- */
+.highlight {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 180px;
+}
+.half-width-highlight {
+  width: 50%;
+  padding: 0 3%;
+}
+.half-width-highlight h2,
+p {
+  color: #000000;
+  text-align: justify;
+}
+.half-width-highlight img {
+  width: 80%;
+}
+.half-width-highlight h2 {
+  font-size: 30px;
+}
+
+/* ------------
+Footer Part
+--------------- */
 .footer-section {
   display: flex;
   flex-direction: column;
