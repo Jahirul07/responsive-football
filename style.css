@@ -160,4 +160,8 @@ Footer Part
     justify-content: center;
     align-items: center;
   }
+  .highlight {
+    width: 100%;
+    flex-direction: column;
+  }
 }
