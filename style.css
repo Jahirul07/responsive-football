@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 64px;
+  line-height: 80px;
+  color: #ffffff;
+}
+.flexible-container {
+  display: flex;
+  background-color: #2d25a0;
+  padding-bottom: 60px;
+}
+.half-width {
+  width: 50%;
+  padding: 0 3%;
+}
+.link-button {
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #e02c6d;
+  font-weight: 500;
+  padding: 10px 40px;
+  border-radius: 5px;
+  margin: 0 8px;
+  transition-duration: 1s;
+}
+.link-button:hover {
+  background-color: #f50950;
+}
+.link-button .icon-style {
+  padding-left: 7px;
+}
+.banner-image {
+  width: 556px;
+  margin-top: 20px;
+}
+
+/* ------ */
+.container {
+  background-color: #ffffff;
+  padding: 50px 180px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 27px;
+  grid-column-gap: 30px;
+}
+.player img {
+  width: 100%;
+  border-radius: 5px;
+}
+.player {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player p {
+  text-align: justify;
+}
+/* ------- */
+#top-player {
+  color: #000000;
+  font-size: 32px;
+  margin-left: 20px;
+}
+#top-player span {
+  color: orange;
+}
+.players-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.top-player {
+  width: 250px;
+  background-color: #ffffff;
+  filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+  padding: 10px;
+  border-radius: 8px;
+}
+.thumbnail img {
+  width: 100%;
+  border-radius: 8px;
+}
+/* -------- */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+.logo-title img {
+  width: 260px;
+}
+.logo {
+  margin-left: 10px;
+  color: #969bab;
+}
+.copy-write {
+  color: #000000;
+}
+/* Media Query */
+@media only screen and (max-width: 688px) {
+  .flexible-container {
+    flex-direction: column;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .players-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
